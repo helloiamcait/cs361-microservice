@@ -91,3 +91,6 @@ if low_inventory_rec != [] and low_inventory_rec[0] == 'done\n':
     },
 ]
 ```
+
+## UML Sequence Diagram
+![UML Sequence Diagram](images/UML%20Sequence%20Diagram.png)

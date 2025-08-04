@@ -1,18 +1,18 @@
 import time
 
-def get_low_inventory():
+def req_low_inventory():
     """
-    Displays the path to a JSON file that contains all
-    low inventory items identified in a JSON file containing
-    inventory.
+    Request a JSON file with the low inventory items in a JSON
+    file with all inventory items.
     """
-
     # send path to inventory JSON
     with open("inventory_pipe.txt", "w") as inventory_pipe:
         inventory_pipe.write(f'run\ntest_inventory.json')
     inventory_pipe.close()
-    time.sleep(6)
 
+def rec_low_inventory():
+    """Recieve and display the path to a JSON file with low 
+    inventory."""
     # recieve path to low inventory JSON
     with open("inventory_pipe.txt", "r") as inventory_path_txt:
         low_inventory_rec = inventory_path_txt.readlines()
@@ -24,4 +24,6 @@ def get_low_inventory():
     print(low_inventory_path)
 
 if __name__ == "__main__":
-    get_low_inventory()
+    req_low_inventory()
+    time.sleep(6)
+    rec_low_inventory()
