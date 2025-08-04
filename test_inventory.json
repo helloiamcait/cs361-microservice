@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Black Sneaker",
+    "quantity": "20",
+    "restock threshold": "5",
+    "size": "8",
+    "cost": "200"
+  },
+  {
+    "name": "Red Stiletto",
+    "quantity": "5",
+    "restock threshold": "2",
+    "size": "6",
+    "cost": "250"
+  },
+    {
+    "name": "Green Sandal",
+    "quantity": "10",
+    "restock threshold": "10",
+    "size": "9",
+    "cost": "150"
+  },
+    {
+    "name": "White Tennis Shoe",
+    "quantity": "6",
+    "restock threshold": "10",
+    "size": "10.5",
+    "cost": "102"
+  }
+]
